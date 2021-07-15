@@ -1,0 +1,44 @@
+// @keyframes moveInTop {
+//     0% {
+//       opacity: 0;
+//       color: rgba(black, .5);
+//       transform: translateY(-3em);
+//     }
+  
+//     80% {
+//       transform: translateY(1rem);
+//     }
+  
+//     100% {
+//       opacity: 1;
+//       transform: translate(initial);
+//     }
+//   }
+
+
+
+@keyframes bounce {
+    0%   { 
+      opacity: .5;
+      transform: translateY(0) ; }
+    50%  { 
+      opacity: 1;
+      transform: translateY(-3rem); }
+    100% { 
+      opacity: .5;
+      transform: translateY(0); }
+}
+
+
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
