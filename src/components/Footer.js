@@ -21,6 +21,7 @@ class Footer extends Component {
         return (
             <footer>
                 <div className='footer-broad'>
+                    <div className='footer-broad-mask'>
                     <Container>
                         <Row>
                             <Col className='col-12 col-sm-4'>
@@ -49,6 +50,7 @@ class Footer extends Component {
                             </Col>
                         </Row>
                     </Container>
+                    </div>
                 </div>
                 <div className='footer-narrow'>
                     <Container>
