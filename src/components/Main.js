@@ -17,7 +17,8 @@ import drupalImage from '../images/skills/drupal.png'
 import visualImage from '../images/skills/visual.png' 
 import phpImage from '../images/skills/php.png' 
 import laravelImage from '../images/skills/laravel.svg' 
-import ContactCorm from './ContactCorm'
+import ContactForm from './ContactForm'
+import { Button, Tooltip } from 'bootstrap'
 
 function Main() {
 
@@ -40,7 +41,7 @@ function Main() {
                     <div className='skills-group-with-title'>
                         <h3 className='semi-title'>Technologie z którymi pracowałem i których używam</h3>
                             <div className='skills-group'>
-                                <img src={htmlImage} alt='HTML-ikona' />
+                                <img src={htmlImage} alt='HTML-ikona'/>
                                 <img src={cssImage} alt='CSS-ikona' />
                                 <img src={jsImage} alt='JS-ikona' />                               
                                 <img src={drupalImage} alt='Drupal-ikona' /> 
@@ -64,7 +65,7 @@ function Main() {
             <Section name='contact'>
                 <h2 className='title'>Kontakt</h2>
                 <h3 className='semi-title'>Skontaktuj się ze mną za pomocą formularza</h3>
-                <ContactCorm/>
+                <ContactForm/>
             </Section>
         </main>
     )
