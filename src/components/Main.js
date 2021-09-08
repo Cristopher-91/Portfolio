@@ -19,6 +19,7 @@ import phpImage from '../images/skills/php.png'
 import laravelImage from '../images/skills/laravel.svg' 
 import ContactForm from './ContactForm'
 import { Button, Tooltip } from 'bootstrap'
+import Project from './Project'
 
 function Main() {
 
@@ -61,6 +62,7 @@ function Main() {
             </Section>
             <Section name='projects'>
                 <h2 className='title'>Projekty</h2>
+                <Project/>
             </Section>
             <Section name='contact'>
                 <h2 className='title'>Kontakt</h2>

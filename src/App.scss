@@ -7,7 +7,6 @@ $colorNormalRedMask: rgba(192,0,0,0.8);
 
 
 @mixin button ($bg, $color, $bg-hover, $color-hover, $padding-h, $padding-v){
-  //display: inline-block;
   border-radius: 10px;
   border-width: 1px;
   border-style: solid;
@@ -18,7 +17,6 @@ $colorNormalRedMask: rgba(192,0,0,0.8);
   padding-bottom: $padding-h;
   padding-left: $padding-v;
   padding-right: $padding-v;
-  //margin: 0.5em auto;
   transition: 0.5s;
   font-weight: 500;
   text-decoration: none;
@@ -32,8 +30,6 @@ $colorNormalRedMask: rgba(192,0,0,0.8);
 .test{
   margin:0;
 }
-
-
 
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -265,5 +261,38 @@ header {
   animation: bounce 2s linear infinite;
   &:hover{
     cursor: pointer;
+  }
+}
+
+
+//Projects
+
+
+.project-card{
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.project-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-title{
+  background-color: $colorNormalRed;
+  color: white;
+  position: absolute;
+  top: -25px;
+  left: -15px;
+  display: inline-block;
+  padding: 5px 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.project-link{
+  padding: 0px 10px;
+
+  svg:hover{
+    color:$colorNormalRed;
   }
 }
