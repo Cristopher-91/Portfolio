@@ -1,13 +1,12 @@
 import React from 'react'
 import Project from './Project'
-import { Row } from 'react-bootstrap'
 
 import { ProjectsList } from '../json/Projects.js'
 
 function Projects() {
     return (
-        <Row>
-            { ProjectsList.map((project, key) =>{
+        <>
+            {ProjectsList.map((project, key) => {
                 return <Project
                     key={key}
                     title={project.title}
@@ -17,9 +16,9 @@ function Projects() {
                     technologies={project.technologies}
                     github={project.github}
                     live={project.live}
-                    />
+                />
             })}
-        </Row>
+        </>
     )
 }
 

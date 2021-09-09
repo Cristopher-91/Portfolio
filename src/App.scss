@@ -32,8 +32,8 @@ $colorNormalRedMask: rgba(192,0,0,0.8);
 }
 
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    //font-size: 16px;
 }
 
 header {
@@ -268,9 +268,9 @@ header {
 //Projects
 
 
-.project-card{
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
+// .project-card{
+//   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+// }
 
 .project-body{
   display: flex;
@@ -289,10 +289,10 @@ header {
 //   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 // }
 
-.project-link{
-  padding: 0px 10px;
+// .project-link{
+//   padding: 0px 10px;
 
-  svg:hover{
-    color:$colorNormalRed;
-  }
-}
+//   svg:hover{
+//     color:$colorNormalRed;
+//   }
+// }
