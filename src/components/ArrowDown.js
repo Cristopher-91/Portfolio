@@ -1,13 +1,28 @@
 import React from 'react'
 import { ChevronDoubleDown } from 'react-bootstrap-icons';
 
+import styled from 'styled-components';
+
 function ArrowDown() {
+
+    const ArrowWrapper = styled.div`
+        display: flex;
+        justify-content: center;
+        transform: translateY(-40px);
+    `
+
+    const StyledArrow = styled(ChevronDoubleDown)`
+        animation: bounce 2s linear infinite;
+        &:hover{
+        cursor: pointer;
+        } 
+    `
     return (
-        <div className='arrow-down-wrapper'>
+        <ArrowWrapper>
             <a href='#about-me'>
-                <ChevronDoubleDown color='white' size={56} className='chevron-down' />
+                <StyledArrow color='white' size={56} />
             </a>
-        </div>
+        </ArrowWrapper>
 
     )
 }

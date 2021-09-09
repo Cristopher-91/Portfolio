@@ -252,17 +252,17 @@ header {
 
 
 //Arrow-Down
-.arrow-down-wrapper{
-  display: flex;
-  justify-content: center;
-}
+// .arrow-down-wrapper{
+//   display: flex;
+//   justify-content: center;
+// }
 
-.chevron-down{
-  animation: bounce 2s linear infinite;
-  &:hover{
-    cursor: pointer;
-  }
-}
+// .chevron-down{
+//   animation: bounce 2s linear infinite;
+//   &:hover{
+//     cursor: pointer;
+//   }
+// }
 
 
 //Projects
@@ -278,16 +278,16 @@ header {
   align-items: center;
 }
 
-.project-title{
-  background-color: $colorNormalRed;
-  color: white;
-  position: absolute;
-  top: -25px;
-  left: -15px;
-  display: inline-block;
-  padding: 5px 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
+// .project-title{
+//   background-color: $colorNormalRed;
+//   color: white;
+//   position: absolute;
+//   top: -25px;
+//   left: -15px;
+//   display: inline-block;
+//   padding: 5px 15px;
+//   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+// }
 
 .project-link{
   padding: 0px 10px;
