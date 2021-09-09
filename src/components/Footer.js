@@ -9,11 +9,6 @@ import githubImage from '../images/icons/github-r.png'
 import linkedinIcon from '../images/icons/linkedin-icon.svg' 
 import githubIcon from '../images/icons/github-icon.svg' 
 import facebookIcon from '../images/icons/facebook-icon.svg' 
-import FooterIcon from './FooterIcon'
-
-
-
-
 
 
 class Footer extends Component {
