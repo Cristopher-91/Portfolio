@@ -23,7 +23,16 @@ const Project = (props) => {
         box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     `;
 
-
+    const ProjectLink = styled.a`
+        padding: 0 .5em;
+        
+        svg{
+            transition: color .5s ease-in-out;
+            &:hover{
+                color:#c00000;
+            }
+        }
+    `;
 
     return (
         <Col md={6}>
@@ -41,8 +50,8 @@ const Project = (props) => {
                         <p><strong>{props.technologies}</strong></p>
                     </div>
                     <div className='project-links'>
-                        <a className='project-link' href={props.github}><FaGithub fontSize='40'></FaGithub></a>
-                        <a className='project-link' href={props.live}><FaLink fontSize='40'></FaLink></a>
+                        <ProjectLink href={props.github}><FaGithub fontSize='40'></FaGithub></ProjectLink>
+                        <ProjectLink href={props.live}><FaLink fontSize='40'></FaLink></ProjectLink>
                     </div>
                 </Card.Body>
             </ProjectCard>

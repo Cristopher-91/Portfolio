@@ -4,8 +4,6 @@ import '../animations.scss';
 import { Container, Row } from 'react-bootstrap';
 import Particles from 'react-particles-js';
 import ArrowDown from './ArrowDown';
-import { ChevronDoubleDown } from 'react-bootstrap-icons';
-
 
 function Header() {
     return (
