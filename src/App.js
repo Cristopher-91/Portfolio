@@ -1,4 +1,3 @@
-import './App.css';
 import './App.scss';
 import './css/responsive.scss'
 import Header from './components/Header';
