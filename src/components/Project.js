@@ -5,7 +5,12 @@ import styled from 'styled-components';
 
 
 
-function Project(props) {
+const Project = (props) => {
+
+    const ProjectCard = styled(Card)`
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        margin-bottom: 3em;
+    `
 
     const ProjectTitle = styled.h2`
         background-color: #c00000;;
@@ -18,9 +23,11 @@ function Project(props) {
         box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     `;
 
+
+
     return (
         <Col md={6}>
-            <Card className='project-card'  >
+            <ProjectCard  >
                 <div >
                     <ProjectTitle>{props.title}</ProjectTitle>
                 </div>
@@ -38,7 +45,7 @@ function Project(props) {
                         <a className='project-link' href={props.live}><FaLink fontSize='40'></FaLink></a>
                     </div>
                 </Card.Body>
-            </Card>
+            </ProjectCard>
         </Col>
     )
 }
