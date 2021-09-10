@@ -1,14 +1,39 @@
 import React from 'react'
-import TypeWriter from './TypeWriter'
-import '../animations.scss';
+import styled from 'styled-components';
 import { Container, Row } from 'react-bootstrap';
-import Particles from 'react-particles-js';
-import ArrowDown from './ArrowDown';
 
-function Header() {
+import ArrowDown from './ArrowDown';
+import TypeWriter from './TypeWriter'
+import '../../animations.scss';
+
+import Particles from 'react-particles-js';
+import HeaderBackgroundImage from '../../images/Background.jpg'
+
+
+
+
+
+
+const Header = () => {
+
+    const Header = styled.header`
+        height: 100vh;
+        width: 100%;
+        background-image: url(${HeaderBackgroundImage});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    `
+    const HeaderWrapper = styled.div`
+        display: flex;
+        align-items: center;
+        height: 95vh;
+        width: 100%;
+    `
+
     return (
-        <header>
-            <div className='header-wrapper'>
+        <Header>
+            <HeaderWrapper>
             <Particles      
                 params={{
                     polygon: {
@@ -29,14 +54,14 @@ function Header() {
                     </div>
                 </Row>
             </Container>
-            </div>
+            </HeaderWrapper>
             <Container>
                 <Row>
                     <ArrowDown/>
                 </Row>
             </Container>
 
-        </header>
+        </Header>
     )
 }
 
