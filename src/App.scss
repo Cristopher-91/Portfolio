@@ -154,57 +154,56 @@ header {
 
 
   //Footer
-  .footer-broad{
-    background-image: url('./images/Background-motherboard.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    color: white;
-  }
+  // .footer-broad{
+  //   background-image: url('./images/Background-motherboard.jpg');
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover; 
+  //   color: white;
+  // }
 
-  .footer-broad-mask{
-    background-color: $colorNormalRedMask;
-    padding: 2rem 0rem;
-  }
+  // .footer-broad-mask{
+  //   background-color: $colorNormalRedMask;
+  //   padding: 2rem 0rem;
+  // }
 
-  .footer-narrow{
-    padding: 12px;
-    background-color:black;
-    color: white;
-    text-align: center;
-    align-content: center;
-  }
+  // .footer-narrow{
+  //   padding: 12px;
+  //   background-color:black;
+  //   color: white;
+  //   text-align: center;
+  //   align-content: center;
+  // }
 
-  .footer-column{
-    display: flex;
-    flex-direction: column;
-  }
+  // .footer-column{
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 
-  .footer-icons{
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  //chyba w ogóle niepotrzebne
+  // .footer-icons{
+  //   display: flex; 
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  // }
 
-  .footer-icon-right{
-    margin-right: 10px;
-  }
+  //użyję clasy me
+  // .footer-icon-right{
+  //   margin-right: 10px;
+  // }
 
-  .footer-icon-link{
-    transition: .5s;
+  // .footer-icon-link{
+  //   transition: .5s;
     
-    img{
-      filter: invert(100%);
-      width: 30px;
-    }
+  //   img{
+  //     filter: invert(100%);
+  //     width: 30px;
+  //   }
 
-    &:hover{
-      img{
-        filter: invert(0%);
-      }
 
-    }
-  }
+
+  //   }
+  // }
 
 
 
