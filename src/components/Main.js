@@ -2,24 +2,14 @@ import React from 'react'
 import Section from './Section'
 import { Container, Row, Col } from 'react-bootstrap'
 
-
 import myImage from '../images/Me.png' 
 import selfImage from '../images/Self-Image.jpg' 
-import htmlImage from '../images/skills/html.png'
-import cssImage from '../images/skills/css.png' 
-import mysqlImage from '../images/skills/mysql.png'
-import tsImage from '../images/skills/ts.png'
-import gitImage from '../images/skills/git.png'
-import reactImage from '../images/skills/react.png' 
-import jsImage from '../images/skills/js.png' 
-import sassImage from '../images/skills/sass.png' 
-import drupalImage from '../images/skills/drupal.png' 
-import visualImage from '../images/skills/visual.png' 
-import phpImage from '../images/skills/php.png' 
-import laravelImage from '../images/skills/laravel.svg' 
+
+
 import ContactForm from './ContactForm'
 import { Button, Tooltip } from 'bootstrap'
 import Projects from './Projects'
+import Skills from './Sections/Skills/Skills'
 
 function Main() {
 
@@ -37,29 +27,7 @@ function Main() {
                     </div>
                 </Col>
             </Section>
-            <Section name='skills'>
-                <h2 className='title'>Umiejętności</h2>
-                    <div className='skills-group-with-title'>
-                        <h3 className='semi-title'>Technologie z którymi pracowałem i których używam</h3>
-                            <div className='skills-group'>
-                                <img src={htmlImage} alt='HTML-ikona'/>
-                                <img src={cssImage} alt='CSS-ikona' />
-                                <img src={jsImage} alt='JS-ikona' />                               
-                                <img src={drupalImage} alt='Drupal-ikona' /> 
-                                <img src={phpImage} alt='PHP-ikona' />        
-                                <img src={gitImage} alt='GIT-ikona' />                  
-                                <img src={visualImage} alt='VisualStudio-ikona' />
-                                <img src={mysqlImage} alt='MySQL-ikona' />                  
-                                <img src={sassImage} alt='Sass-ikona' />   
-                        </div>  
-                        <h3 className='semi-title'>Technologie, których się uczę</h3>
-                            <div className='skills-group'>
-                                <img src={reactImage} alt='React-ikona' />
-                                <img src={laravelImage} alt='Laravel-ikona' />
-                                <img src={tsImage} alt='TS-ikona' />   
-                        </div>                
-                    </div>
-            </Section>
+            <Skills/>
             <Section name='projects'>
                 <h2 className='title'>Projekty</h2>
                 <Projects/>
