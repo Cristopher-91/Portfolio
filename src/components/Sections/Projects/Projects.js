@@ -1,11 +1,13 @@
 import React from 'react'
+import Section from '../../Section'
 import Project from './Project'
 
-import { ProjectsList } from '../json/Projects.js'
+import { ProjectsList } from '../../../json/Projects.js'
 
 function Projects() {
     return (
-        <>
+        <Section name='projects'>
+            <h2 className='title'>Projekty</h2>
             {ProjectsList.map((project, key) => {
                 return <Project
                     key={key}
@@ -18,7 +20,7 @@ function Projects() {
                     live={project.live}
                 />
             })}
-        </>
+        </Section>
     )
 }
 
