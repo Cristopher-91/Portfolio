@@ -214,26 +214,26 @@ header {
   }
 
   .skills-group-with-title{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
+  //   display: flex;
+  //   flex-direction: column;
+  //text-align: center;
   }
+  // }
   .skills-group{
-    margin-bottom: 3rem;
-
-    img{
-      margin: 1rem;
-      border-radius: 5px;
-      width: 3.5rem; 
-      transition: transform 0.25s ease-in-out;
-
-      &:hover{
-        transform: scale(1.1);
-
-      }
-    }
+    // margin-bottom: 3rem;
   }
+    // img{
+    //   margin: 1rem;
+    //   border-radius: 5px;
+    //   width: 3.5rem; 
+    //   transition: transform 0.25s ease-in-out;
+
+    //   &:hover{
+    //     transform: scale(1.1);
+
+    //   }
+    // }
+  // }
 
 
 
