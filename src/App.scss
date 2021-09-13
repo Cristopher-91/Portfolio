@@ -63,23 +63,23 @@ $colorNormalRedMask: rgba(192,0,0,0.8);
     }
   }
   
-  .header-text-box{
-    text-align: center;
-    text-shadow: 0px 1px 10px red;
-    color: white;
+  // .header-text-box{
+  //   text-align: center;
+  //   text-shadow: 0px 1px 10px red;
+  //   color: white;
 
-    h1{
-        text-transform: uppercase;
-        letter-spacing: 0.5rem;
-    }
+  //   h1{
+  //       text-transform: uppercase;
+  //       letter-spacing: 0.5rem;
+  //   }
 
-    h2{
-        text-transform: uppercase;
-        letter-spacing: 0.5rem;
-        text-shadow: 0, 0, 10, black;
-        animation: moveInTop 3s ease-out;
-    }
-  }
+  //   h2{
+  //       text-transform: uppercase;
+  //       letter-spacing: 0.5rem;
+  //       text-shadow: 0, 0, 10, black;
+  //       animation: moveInTop 3s ease-out;
+  //   }
+  // }
   
   // .typewriter{
   //   display: inline-block;
@@ -97,9 +97,9 @@ $colorNormalRedMask: rgba(192,0,0,0.8);
   // }
 
   #tsparticles{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
   }
 
   .section-content{

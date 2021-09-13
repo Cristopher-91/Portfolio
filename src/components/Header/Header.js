@@ -31,10 +31,34 @@ const Header = () => {
         width: 100%;
     `
 
+    const StyledParticles = styled(Particles)`
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    `
+
+    const HeaderTextBox = styled.div`
+        text-align: center;
+        text-shadow: 0px 1px 10px red;
+        color: white;
+    `
+
+    const Title = styled.h1`
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+    `
+
+    const SubTitle = styled.h2`
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        text-shadow: 0, 0, 10, black;
+        animation: moveInTop 3s ease-out;
+    `
+
     return (
         <Header>
             <HeaderWrapper>
-            <Particles      
+            <StyledParticles      
                 params={{
                     polygon: {
                         enable: true,
@@ -46,12 +70,12 @@ const Header = () => {
                 }} />
             <Container>
                 <Row>
-                    <div className='header-text-box'>
+                    <HeaderTextBox>
                         {/* <h1>Krzysztof Piasecki</h1>
-                        <h2>Web Developer</h2> */}
-                        <h1>Test</h1>
+                        <SubTitle>Web Developer</SubTitle> */}
+                        <Title>Test</Title>
                         <TypeWriter/>
-                    </div>
+                    </HeaderTextBox>
                 </Row>
             </Container>
             </HeaderWrapper>
