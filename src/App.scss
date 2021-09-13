@@ -5,6 +5,11 @@ $colorDarkRed: #910000;
 $colorNormalRed: #c00000;
 $colorNormalRedMask: rgba(192,0,0,0.8);
 
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
 
 @mixin button ($bg, $color, $bg-hover, $color-hover, $padding-h, $padding-v){
   border-radius: 10px;
@@ -62,6 +67,10 @@ $colorNormalRedMask: rgba(192,0,0,0.8);
       color: black;
     }
   }
+
+  img{
+    max-width:100%;
+  }
   
   // .header-text-box{
   //   text-align: center;
@@ -103,25 +112,24 @@ $colorNormalRedMask: rgba(192,0,0,0.8);
   }
 
   .section-content{
-      font-family: 'Roboto Condensed', sans-serif;
-      padding: 2rem 0rem;
-      margin: 0 auto;
-      justify-content: center;
+      //padding: 2rem 0rem;
+      // margin: 0 auto;   chyba nic nie robi
+      // justify-content: center;  chyba nic nie robi
   }
 
-  .title{
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+  // .title{
+  //   text-transform: uppercase;
+  //   text-align: center;
+  //   margin-bottom: 2rem;
+  // }
 
-  .semi-title{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: .75rem;
-    line-height: 1.5rem;
-    letter-spacing: .5rem;
-  }
+  // .semi-title{
+  //   text-transform: uppercase;
+  //   text-align: center;
+  //   font-size: .75rem;
+  //   line-height: 1.5rem;
+  //   letter-spacing: .5rem;
+  // }
 
   .semi-title-left{
     text-transform: uppercase;
@@ -136,20 +144,20 @@ $colorNormalRedMask: rgba(192,0,0,0.8);
       background-size: cover; 
   }
 
+  .section-skills, .section-contact{
+    background-color: black;
+    color: white;
+}
+
   .section-about-me-mask, .section-projects-mask{
     background: $colorGrayMask;
   }
 
-  .section-skills, .section-contact{
-      background-color: black;
-      color: white;
-  }
 
 
 
-  img{
-    max-width:100%;
-  }
+
+ 
 
 
   //Footer

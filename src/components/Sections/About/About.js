@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from '../../Section'
 import { Col } from 'react-bootstrap'
+import Title from '../../Title'
 import styled from 'styled-components'
 
 import selfImage from '../../../images/Self-Image.jpg' 
@@ -13,7 +14,7 @@ const JustifiedDiv = styled.div`
 const About = () => {
     return (
         <Section name='about-me'>
-            <h2 className='title'>O mnie</h2>
+            <Title>O mnie</Title>
             <Col lg={5}>
                 <img src={selfImage} className='mb-4 mb-lg-0' alt='Krzysztof Piasecki - zdjęcie' />
             </Col>
