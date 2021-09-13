@@ -1,9 +1,11 @@
 import './App.scss';
 import './css/responsive.scss'
-import Header from './components/Header';
-import Main from './components/Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './components/Footer';
+
+
+import Header from './components/Header/Header';
+import Main from './components/Main';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (

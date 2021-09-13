@@ -1,8 +1,17 @@
 import React from 'react'
 import { useState } from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap'
+import { Container, Row, Form } from 'react-bootstrap'
+import styled from 'styled-components';
 
-function ContactForm() {
+const ContactForm = () => {
+
+    const ContactFormWrapper = styled(Form)`
+        background-color: #f1eff3;
+        padding: 20px;
+        border-radius: 10px;
+        color: black;
+        font-weight: 700;  
+    `
 
     const [ form, setForm ] = useState({})
     const [ errors, setErrors ] = useState({})
@@ -60,7 +69,7 @@ function ContactForm() {
 
     return (
         <Container>
-        <Form onSubmit={handleSubmit} className='mt-4 form-box' noValidate>
+        <ContactFormWrapper onSubmit={handleSubmit} className='mt-4' noValidate>
             <Row>
             <Form.Group className='mb-3 col-md-6'>
                 <Form.Label>Email</Form.Label>
@@ -107,7 +116,7 @@ function ContactForm() {
                     >Wyślij wiadomość
                 </button>
             </Form.Group>
-        </Form>
+        </ContactFormWrapper>
         </Container>
     )
 }

@@ -11,7 +11,6 @@ const Project = (props) => {
         box-shadow: 0 5px 20px rgba(0,0,0,0.2);
         margin-bottom: 3em;
     `
-
     const ProjectTitle = styled.h2`
         background-color: #c00000;;
         color: white;
@@ -21,8 +20,14 @@ const Project = (props) => {
         display: inline-block;
         padding: 5px 15px;
         box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-    `;
+    `
 
+    const ProjectBody = styled.div`
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 1rem;
+    `
     const ProjectLink = styled.a`
         padding: 0 .5em;
         
@@ -32,7 +37,7 @@ const Project = (props) => {
                 color:#c00000;
             }
         }
-    `;
+    `
 
     return (
         <Col md={6}>
@@ -40,7 +45,7 @@ const Project = (props) => {
                 <div >
                     <ProjectTitle>{props.title}</ProjectTitle>
                 </div>
-                <Card.Body className='project-body'>
+                <ProjectBody>
                     <img className='mb-3' src={`../images/projects/${props.imagePath}`} alt={props.alt} />
 
                     <div className='project-description text-center'>
@@ -53,7 +58,7 @@ const Project = (props) => {
                         <ProjectLink href={props.github}><FaGithub fontSize='40'></FaGithub></ProjectLink>
                         <ProjectLink href={props.live}><FaLink fontSize='40'></FaLink></ProjectLink>
                     </div>
-                </Card.Body>
+                </ProjectBody>
             </ProjectCard>
         </Col>
     )

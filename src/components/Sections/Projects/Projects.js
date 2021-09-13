@@ -1,11 +1,14 @@
 import React from 'react'
+import Section from '../../Section'
 import Project from './Project'
+import Title from '../../Title'
 
-import { ProjectsList } from '../json/Projects.js'
+import { ProjectsList } from '../../../json/Projects.js'
 
 function Projects() {
     return (
-        <>
+        <Section name='projects'>
+            <Title>Projekty</Title>
             {ProjectsList.map((project, key) => {
                 return <Project
                     key={key}
@@ -18,7 +21,7 @@ function Projects() {
                     live={project.live}
                 />
             })}
-        </>
+        </Section>
     )
 }
 

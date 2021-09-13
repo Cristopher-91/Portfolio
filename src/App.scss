@@ -5,6 +5,11 @@ $colorDarkRed: #910000;
 $colorNormalRed: #c00000;
 $colorNormalRedMask: rgba(192,0,0,0.8);
 
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
 
 @mixin button ($bg, $color, $bg-hover, $color-hover, $padding-h, $padding-v){
   border-radius: 10px;
@@ -27,32 +32,32 @@ $colorNormalRedMask: rgba(192,0,0,0.8);
     }	
 }
 
-.test{
-  margin:0;
-}
+// .test{
+//   margin:0;
+// }
 
-body{
+// body{
     // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     //font-size: 16px;
-}
+// }
 
-header {
-    height: 100vh;
-    width: 100%;
-    background-image: url('./images/Background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-  }
+// header {
+//     height: 100vh;
+//     width: 100%;
+//     background-image: url('./images/Background.jpg');
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover; 
+//   }
 
-.header-wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 95vh;
-  width: 100%;
-}
+// .header-wrapper{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   height: 95vh;
+//   width: 100%;
+// }
 
   a:link, a:visited{
     text-decoration: none;
@@ -62,67 +67,69 @@ header {
       color: black;
     }
   }
-  
-  .header-text-box{
-    text-align: center;
-    text-shadow: 0px 1px 10px red;
-    color: white;
 
-    h1{
-        text-transform: uppercase;
-        letter-spacing: 0.5rem;
-    }
-
-    h2{
-        text-transform: uppercase;
-        letter-spacing: 0.5rem;
-        text-shadow: 0, 0, 10, black;
-        animation: moveInTop 3s ease-out;
-    }
+  img{
+    max-width:100%;
   }
   
-  
-  .typewriter{
-    display: inline-block;
-  }
+  // .header-text-box{
+  //   text-align: center;
+  //   text-shadow: 0px 1px 10px red;
+  //   color: white;
 
-  .typewriter p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 1.5s steps(50, end),
-      blink-caret .75s step-end infinite;
-  }
+  //   h1{
+  //       text-transform: uppercase;
+  //       letter-spacing: 0.5rem;
+  //   }
+
+  //   h2{
+  //       text-transform: uppercase;
+  //       letter-spacing: 0.5rem;
+  //       text-shadow: 0, 0, 10, black;
+  //       animation: moveInTop 3s ease-out;
+  //   }
+  // }
+  
+  // .typewriter{
+  //   display: inline-block;
+  // }
+
+  // .typewriter p {
+  //   overflow: hidden; /* Ensures the content is not revealed until the animation */
+  //   border-right: .15em solid orange; /* The typwriter cursor */
+  //   white-space: nowrap; /* Keeps the content on a single line */
+  //   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  //   letter-spacing: .15em; /* Adjust as needed */
+  //   animation: 
+  //     typing 1.5s steps(50, end),
+  //     blink-caret .75s step-end infinite;
+  // }
 
   #tsparticles{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
   }
 
   .section-content{
-      font-family: 'Roboto Condensed', sans-serif;
-      padding: 2rem 0rem;
-      margin: 0 auto;
-      justify-content: center;
+      //padding: 2rem 0rem;
+      // margin: 0 auto;   chyba nic nie robi
+      // justify-content: center;  chyba nic nie robi
   }
 
-  .title{
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+  // .title{
+  //   text-transform: uppercase;
+  //   text-align: center;
+  //   margin-bottom: 2rem;
+  // }
 
-  .semi-title{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: .75rem;
-    line-height: 1.5rem;
-    letter-spacing: .5rem;
-  }
+  // .semi-title{
+  //   text-transform: uppercase;
+  //   text-align: center;
+  //   font-size: .75rem;
+  //   line-height: 1.5rem;
+  //   letter-spacing: .5rem;
+  // }
 
   .semi-title-left{
     text-transform: uppercase;
@@ -137,81 +144,80 @@ header {
       background-size: cover; 
   }
 
+  .section-skills, .section-contact{
+    background-color: black;
+    color: white;
+}
+
   .section-about-me-mask, .section-projects-mask{
     background: $colorGrayMask;
   }
 
-  .section-skills, .section-contact{
-      background-color: black;
-      color: white;
-  }
 
 
 
-  img{
-    max-width:100%;
-  }
+
+ 
 
 
   //Footer
-  .footer-broad{
-    background-image: url('./images/Background-motherboard.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    color: white;
-  }
+  // .footer-broad{
+  //   background-image: url('./images/Background-motherboard.jpg');
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover; 
+  //   color: white;
+  // }
 
-  .footer-broad-mask{
-    background-color: $colorNormalRedMask;
-    padding: 2rem 0rem;
-  }
+  // .footer-broad-mask{
+  //   background-color: $colorNormalRedMask;
+  //   padding: 2rem 0rem;
+  // }
 
-  .footer-narrow{
-    padding: 12px;
-    background-color:black;
-    color: white;
-    text-align: center;
-    align-content: center;
-  }
+  // .footer-narrow{
+  //   padding: 12px;
+  //   background-color:black;
+  //   color: white;
+  //   text-align: center;
+  //   align-content: center;
+  // }
 
-  .footer-column{
-    display: flex;
-    flex-direction: column;
-  }
+  // .footer-column{
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 
-  .footer-icons{
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  //chyba w ogóle niepotrzebne
+  // .footer-icons{
+  //   display: flex; 
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  // }
 
-  .footer-icon-right{
-    margin-right: 10px;
-  }
+  //użyję clasy me
+  // .footer-icon-right{
+  //   margin-right: 10px;
+  // }
 
-  .footer-icon-link{
-    transition: .5s;
+  // .footer-icon-link{
+  //   transition: .5s;
     
-    img{
-      filter: invert(100%);
-      width: 30px;
-    }
+  //   img{
+  //     filter: invert(100%);
+  //     width: 30px;
+  //   }
 
-    &:hover{
-      img{
-        filter: invert(0%);
-      }
 
-    }
-  }
+
+  //   }
+  // }
 
 
 
 //Sections
-  .about-me{
-    text-align: justify;
-  }
+  // .about-me{
+  //   text-align: justify;
+  // }
 
   .skills-group-with-title{
   //   display: flex;
@@ -238,13 +244,13 @@ header {
 
 
   // Contact Form
-  .form-box{
-    background-color: $colorGray;
-    padding: 20px;
-    border-radius: 10px;
-    color: black;
-    font-weight: 700;
-  }
+  // .form-box{
+  //   background-color: $colorGray;
+  //   padding: 20px;
+  //   border-radius: 10px;
+  //   color: black;
+  //   font-weight: 700;
+  // }
 
   .button-red{
     @include button($colorNormalRed, white, white, $colorNormalRed, 0.5rem, 3rem);
@@ -272,11 +278,11 @@ header {
 //   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 // }
 
-.project-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// .project-body{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
 // .project-title{
 //   background-color: $colorNormalRed;

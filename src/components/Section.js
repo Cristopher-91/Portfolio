@@ -6,8 +6,7 @@ function Section(props) {
         <section id={props.name} className={'section-' + props.name}>
             <div className={'section-' + props.name + '-mask'}>
                 <Container>
-                    <div className='section-content'>
-
+                    <div className='py-5'>
                         <Row>
                             {props.children}
                         </Row>

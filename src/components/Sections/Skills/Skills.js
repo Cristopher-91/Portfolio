@@ -1,6 +1,8 @@
 import React from 'react'
 import Section from '../../Section'
 import Skill from './Skill'
+import Title from '../../Title'
+import SubTitle from '../../SubTitle'
 
 import htmlImage from '../../../images/skills/html.png'
 import cssImage from '../../../images/skills/css.png'
@@ -18,10 +20,10 @@ import laravelImage from '../../../images/skills/laravel.png'
 
 const Skills = () => {
     return (
-        <Section name='skills'>
-            <h2 className='title'>Umiejętności</h2>
+        <Section black name='skills' >
+            <Title>Umiejętności</Title>
             <div className='text-center'>
-                <h3 className='semi-title'>Technologie z którymi pracowałem i których używam</h3>
+                <SubTitle className='semi-title'>Technologie z którymi pracowałem i których używam</SubTitle>
                 <div className='mb-5'>
                     <Skill image={htmlImage} title="HTML5" alt='HTML-ikona'/>
                     <Skill image={cssImage} title="CSS3" alt='CSS-ikona' />
@@ -33,7 +35,7 @@ const Skills = () => {
                     <Skill image={mysqlImage} title="MySql" alt='MySQL-ikona' />
                     <Skill image={sassImage} title="Sass" alt='Sass-ikona' />
                 </div>
-                <h3 className='semi-title'>Technologie, których się uczę</h3>
+                <SubTitle className='semi-title'>Technologie, których się uczę</SubTitle>
                 <div className='skills-group'>
                     <Skill image={reactImage} title="React.js" alt='React-ikona' />
                     <Skill image={laravelImage} title="Laravel" alt='Laravel-ikona' />
