@@ -35,7 +35,7 @@ const Skills = () => {
                     <Skill image={mysqlImage} title="MySql" alt='MySQL-ikona' />
                     <Skill image={sassImage} title="Sass" alt='Sass-ikona' />
                 </div>
-                <h3 className='semi-title'>Technologie, których się uczę</h3>
+                <SubTitle className='semi-title'>Technologie, których się uczę</SubTitle>
                 <div className='skills-group'>
                     <Skill image={reactImage} title="React.js" alt='React-ikona' />
                     <Skill image={laravelImage} title="Laravel" alt='Laravel-ikona' />
